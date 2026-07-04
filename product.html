@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGATIQUES | Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement-bar">
+        MEGA is here!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#collections">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="logo">MEGATIQUES</div>
+
+           <div class="nav-icons">
+                <a href="search.html"class="nav-icon-btn">Search</a>
+                <a href="account.html" class="nav-icon-btn">Account</a>
+                <a href="cart.html"class="nav-icon-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+
+    <section class="product-page">
+
+        <div class="product-gallery">
+
+            <img
+             id="product-image"
+            class="main-image"
+            src="wristpiece/the empire set/IMG-20260608-WA0022.jpg"
+            alt="Product">
+
+            <div
+            class="thumbnail-gallery"
+            id="thumbnail-gallery">
+
+            </div>
+           
+
+        </div>
+
+      <div class="product-details">
+
+<h1 id="product-name"></h1>
+
+<div
+class="product-price"
+id="product-price">
+</div>
+
+<p
+class="product-description"
+id="product-description">
+</p>
+
+<p>
+
+<strong>Availability:</strong>
+
+<span id="product-stock"></span>
+
+</p>
+
+<div class="quantity-box">
+
+<button
+onclick="changeQty(-1)">-
+
+</button>
+
+<input
+type="number"
+id="qty"
+value="1"
+min="1">
+
+<button
+onclick="changeQty(1)">
++
+</button>
+
+</div>
+
+<button
+class="add-cart-btn"
+id="addCartBtn">
+
+Add To Cart
+
+</button>
+
+<button
+class="buy-btn"
+id="buyNowBtn">
+
+Order on WhatsApp
+
+</button>
+
+</div>
+
+    </section>
+
+    <!-- Related Products -->
+
+    <section class="related-products">
+
+        <h2>You May Also Like</h2>
+
+        <div
+        class="related-grid"
+        id="related-products">
+
+        </div>
+
+    </section>
+
+    <script src="js/product-details.js"></script>
+    <script src="js/script.js"></script>
+
+<div class="currency-picker">
+        <span>🇳🇬</span> NGN ▾
+    </div>
+
+</body>
+</html>

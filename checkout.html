@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGATIQUES | Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement-bar">
+        MEGA is here!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#collections">Collection</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="logo">MEGATIQUES</div>
+
+           <div class="nav-icons">
+                <a href="search.html"class="nav-icon-btn">Search</a>
+                <a href="account.html" class="nav-icon-btn">Account</a>
+                <a href="cart.html"class="nav-icon-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Checkout Section-->
+
+<section class="checkout-hero">
+
+    <h1>CHECKOUT</h1>
+
+    <p>
+        Complete your order details below.
+    </p>
+
+</section>
+
+<section class="checkout-container">
+
+    <!-- Customer Information -->
+
+    <div class="checkout-form">
+
+        <h2>Billing Details</h2>
+
+        <form>
+
+            <input type="text" id="fullName" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="text" id="address" placeholder="Street Address" required>
+
+<input type="text" id="city" placeholder="City" required>
+
+<input type="text" id="state" placeholder="State" required>
+
+<textarea
+id="notes"
+placeholder="Additional Notes (Optional)"
+rows="5"></textarea>
+
+        </form>
+
+    </div>
+
+    <!-- Order Summary -->
+
+    <div class="checkout-summary">
+
+        <h2>Order Summary</h2>
+        <div id="checkout-items"></div>
+
+        <div class="summary-item">
+    <span>Subtotal</span>
+    <span>₦<span id="checkout-subtotal">0</span></span>
+</div>
+
+        <div class="summary-item total">
+    <span>Total</span>
+    <span>₦<span id="checkout-total">0</span></span>
+</div>
+
+        <button class="place-order-btn"
+onclick="placeOrder()">
+            PLACE ORDER
+        </button>
+
+    </div>
+
+</section>
+
+<div class="currency-picker">
+        <span>🇳🇬</span> NGN ▾
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
