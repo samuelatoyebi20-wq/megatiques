@@ -5,7 +5,7 @@ const router =
 express.Router();
 
 const Customer =
-require("../models/Customer");
+require("../models/customer");
 
 router.get(
 "/",
