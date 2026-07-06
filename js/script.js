@@ -1,3 +1,8 @@
+const API =
+window.location.hostname === "localhost"
+? "http://localhost:3000/api"
+: "https://megatiques.onrender.com/api";
+
 // =========================
 // PRODUCT IMAGE GALLERY
 // =========================
@@ -373,8 +378,6 @@ document.addEventListener(
 
         displayCart();
 
-        fetchProducts();
-
         if (typeof searchProducts === "function") {
             searchProducts();
         }
@@ -553,8 +556,7 @@ subtotal + delivery;
         };
 
         const response =
-            await fetch(
-                "http://localhost:3000/api/orders",
+            await fetch(`${API}/orders`,
                 {
                     method: "POST",
 
