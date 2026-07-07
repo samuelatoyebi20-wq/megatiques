@@ -1,5 +1,3 @@
-const API = "http://localhost:3000/api";
-
 const params = new URLSearchParams(window.location.search);
 const slug = params.get("category");
 

@@ -1,5 +1,3 @@
-const API = "http://localhost:3000/api";
-
 // Get product id from URL
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");

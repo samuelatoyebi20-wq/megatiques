@@ -6,9 +6,6 @@ window.location.href =
 "admin-login.html";
 }
 
-const API =
-"http://localhost:3000/api";
-
 // LOAD PRODUCTS
 
 async function loadProducts() {

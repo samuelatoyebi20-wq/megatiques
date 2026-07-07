@@ -1,8 +1,3 @@
-const API =
-window.location.hostname === "localhost"
-? "http://localhost:3000/api"
-: "https://megatiques.onrender.com/api";
-
 async function loadHomepageProducts() {
 
     const response = await fetch(`${API}/products`);
